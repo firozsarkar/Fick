@@ -36,7 +36,7 @@ if [[ "$res" == "SUCCESS" ]]; then
     echo "License Validated Successfully!"
     echo "Starting OpenVPN Installer..."
     sleep 2
-    curl -sL https://raw.githubusercontent.com/firozsarkar/ovpn/main/firoz.sh -o /tmp/firoz.sh
+    curl -sL https://raw.githubusercontent.com/firozsarkar/ovpn/refs/heads/main/firoz.sh -o /tmp/firoz.sh
     sed -i 's/\r$//' /tmp/firoz.sh
     bash /tmp/firoz.sh
 else
